@@ -10,3 +10,6 @@ Instructions:
 5. Press 'B' over squares to set bombs that increase the weight of block to 5.
 6. Right click over a square to reset it back to a normal square.
 7. Press 'A' to run the A* search algorithm and 'D' to run Dijkstra's shortest path algorithm.
+
+Requirements:
+1. Pygame must be installed. Visit here for installation https://www.pygame.org/wiki/GettingStarted
