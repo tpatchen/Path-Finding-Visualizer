@@ -81,6 +81,15 @@ def main():
                         for node in row:
                             node.get_neighbors(grid)
                     djikstras(grid, start, end, DISPLAY, small_weight)
+
+            if event.type == pygame.KEYDOWN:
+            	if event.key == pygame.K_r:
+            		start = None
+            		end = None
+            		for row in grid.array:
+            			for node in row:
+            				node.reset_node()
+            				
         pygame.display.update()
 
 main()

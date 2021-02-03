@@ -25,6 +25,8 @@ class Node:
         return self.color == BLACK
 
     def set_as_barrier(self):
+        if self.weight == 15:
+            return
         self.color = BLACK
     
     def set_start(self):
@@ -40,7 +42,7 @@ class Node:
         return self.color == PINK
     
     def is_weight(self):
-        return self.weight == 5
+        return self.weight == 15
 
     def reset_node(self):
         self.color = WHITE
@@ -56,6 +58,8 @@ class Node:
         self.color = BLUE
     
     def set_weight(self):
+        if self.color == BLACK:
+            return
         self.weight = 15
     
     def get_neighbors(self, grid):
